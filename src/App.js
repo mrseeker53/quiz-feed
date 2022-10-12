@@ -30,7 +30,7 @@ function App() {
       path: '*',
       element:
         <div className='mt-52'>
-          <p className='text-5xl text-red-400 font-semibold mb-4'>404 Not Found!</p>
+          <p className='text-5xl text-red-400 font-semibold mb-4'>404... Not Found!</p>
           <p className='text-2xl text-red-900'>: : The server can not find the requested resource</p>
         </div>
     }
