@@ -7,7 +7,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className='bg-blue-100 w-full h-20 flex items-center justify-between'>
+        <nav className='bg-blue-100 w-full h-20 flex items-center justify-between mb-12'>
             {/* Brand Name */}
             <p className='ml-12 md:w-80 md:ml-20 font-extrabold text-3xl text-blue-500 hover:text-teal-500'>
                 <Link to="/blog">Quiz Feed</Link>
