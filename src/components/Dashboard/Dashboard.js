@@ -1,12 +1,15 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 const Dashboard = () => {
+
+
     return (
         <div>
-            <h2>Dashboard</h2>
+            <Header></Header>
             <Footer></Footer>
-        </div>
+        </div >
     );
 };
 

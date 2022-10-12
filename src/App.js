@@ -8,8 +8,10 @@ import Main from './layout/Main';
 function App() {
   const router = createBrowserRouter([
     {
+      // Route as Layout
       path: '/',
       element: <Main></Main>,
+      // Nested route as Outlet
       children: [
         {
           path: '/',
@@ -17,6 +19,9 @@ function App() {
         },
         {
           path: '/analytics',
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
           element: <Analytics></Analytics>
         },
         {
