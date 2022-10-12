@@ -1,23 +1,22 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import Quiz from '../Quiz/Quiz';
 import Quizzes from '../Quizzes/Quizzes';
 import { useLoaderData } from 'react-router-dom';
 
 
 const Dashboard = () => {
-    const allTopics = useLoaderData();
-    const topics = allTopics.data
+    const allQuizzes = useLoaderData();
+    const quizzes = allQuizzes.data
 
     return (
         <div>
             <Header></Header>
             <div className='my-32 mx-24 md:grid grid-cols-4 gap-3'>
                 {
-                    topics.map(topic => <Quizzes
-                        key={topic.id}
-                        topic={topic}
+                    quizzes.map(quiz => <Quizzes
+                        key={quiz.id}
+                        quiz={quiz}
                     ></Quizzes>)
                 }
             </div>
