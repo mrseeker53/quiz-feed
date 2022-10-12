@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='grid grid-cols-auto gap-5 mb-12 mx-36'>
+        <div className='grid grid-cols-1 gap-5 mb-12 mx-12 md:mx-36'>
             <details className='bg-blue-50 rounded-lg flex justify-center pb-4 px-20 cursor-pointer'>
                 <summary className='py-4 flex justify-between duration-200 ease-in'>
                     1. What is the purpose of React Router?
