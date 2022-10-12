@@ -13,7 +13,7 @@ const Dashboard = () => {
     return (
         <div>
             <Header></Header>
-            <div className='md:grid grid-cols-4 gap-3'>
+            <div className='my-32 mx-24 md:grid grid-cols-4 gap-3'>
                 {
                     topics.map(topic => <Quizzes
                         key={topic.id}
