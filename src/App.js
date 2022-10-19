@@ -17,6 +17,7 @@ function App() {
       children: [
         {
           path: '/',
+          // fetch quiz data to display at dashboard
           loader: async () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
@@ -24,6 +25,7 @@ function App() {
         },
         {
           path: '/analytics',
+          // fetch quiz data to create a graph
           loader: async () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
@@ -39,6 +41,7 @@ function App() {
         },
         {
           path: '/quiz/:quizId',
+          // fetch quiz data with id to display quiz details
           loader: async ({ params }) => {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
