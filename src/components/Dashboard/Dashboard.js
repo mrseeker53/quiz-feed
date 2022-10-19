@@ -6,7 +6,9 @@ import { useLoaderData } from 'react-router-dom';
 
 
 const Dashboard = () => {
+    // set data using useLoaderData
     const allQuizzes = useLoaderData();
+    // set data as array of object from object of object
     const quizzes = allQuizzes.data
 
     return (
@@ -14,6 +16,7 @@ const Dashboard = () => {
             <Header></Header>
             <div className='my-32 mx-24 md:grid grid-cols-4 gap-3'>
                 {
+                    // loop through to send quiz data
                     quizzes.map(quiz => <Quizzes
                         key={quiz.id}
                         quiz={quiz}

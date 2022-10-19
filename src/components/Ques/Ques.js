@@ -1,5 +1,5 @@
 import React from 'react';
-import { Radio, RadioGroup } from "@material-tailwind/react";
+import { Radio } from "@material-tailwind/react";
 import { EyeIcon } from '@heroicons/react/24/solid';
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -46,7 +46,7 @@ const Ques = ({ id, ques }) => {
                                 toast.success(result);
                             }}>
                             <Toaster />
-
+                            {/* add radio button for option */}
                             <Radio
                                 className='mr-2'
                                 name='type'
